@@ -1,0 +1,17 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#countdown {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* You can add more custom styles as needed */
