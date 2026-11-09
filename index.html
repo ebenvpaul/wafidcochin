@@ -1,30 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wafid Cochin makes GCC medical appointments, attestation and visa support easier from Ernakulam.">
+  <title>Wafid Cochin — Your GCC journey, made clear.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .map-card{margin-top:18px;border:1px solid #383b35;background:#191b19;overflow:hidden}.map-card iframe{display:block;width:100%;height:360px;border:0;filter:grayscale(1) contrast(.9) brightness(.82)}.map-bar{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:20px 22px}.map-bar>div:first-child{display:flex;align-items:center;gap:13px}.map-pin{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--acid);color:var(--ink);font-size:9px}.map-bar p{margin:0!important;max-width:none!important}.map-bar strong{display:block;color:#fff;font-size:13px}.map-bar small{display:block;color:#8e9289;font-size:10px;margin-top:4px}.map-actions{display:flex;gap:8px;flex-wrap:wrap}.map-actions a{padding:11px 14px;border:1px solid #4b4f47;border-radius:999px;color:#fff;font-size:10px;font-weight:700;transition:.2s ease}.map-actions a:hover{background:var(--acid);border-color:var(--acid);color:var(--ink)}.map-actions span{margin-left:8px}.contact-details strong{color:#fff;font-weight:700}
+    .wafid-explainer{background:#f4f3ef;border-bottom:1px solid var(--line)}.explainer-grid{display:grid;grid-template-columns:1fr 1fr;gap:10vw;margin-top:55px}.wafid-explainer h2{font-size:clamp(48px,6vw,88px);letter-spacing:-.09em;line-height:.9;margin:0}.wafid-explainer h2 em{font-family:var(--serif);font-weight:400}.explainer-lede{max-width:470px;margin-top:36px;color:#686a64;font-size:15px;line-height:1.7}.fact-list{border-top:1px solid var(--line)}.fact-list article{display:grid;grid-template-columns:48px 150px 1fr;gap:18px;padding:23px 0;border-bottom:1px solid var(--line);align-items:start}.fact-list span{font:10px 'DM Mono',monospace;color:#8e9189}.fact-list h3{font-size:14px;letter-spacing:-.03em;margin:0}.fact-list p{font-size:11px;line-height:1.55;color:#777a73;margin:0}
+    @media(max-width:700px){.map-card{margin-top:10px}.map-card iframe{height:290px}.map-bar{display:block;padding:18px}.map-actions{margin-top:18px}.map-actions a{flex:1;text-align:center}.explainer-grid{display:block;margin-top:38px}.fact-list{margin-top:46px}.fact-list article{grid-template-columns:34px 1fr}.fact-list p{grid-column:2}.wafid-explainer h2{font-size:clamp(48px,13vw,72px)}}
+  </style>
+  <link rel="stylesheet" href="motion.css">
 </head>
-
 <body>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center mt-5">
-                <h1>Coming Soon</h1>
-                <p>We're working on something awesome and exciting!</p>
-                <div id="countdown"></div>
-            </div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="site-shell">
+    <header class="nav-wrap" id="top">
+      <a class="wordmark" href="#top" aria-label="Wafid Cochin home"><span class="mark">W</span><span>WAFID<br><em>COCHIN</em></span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span><b>Menu</b></button>
+      <nav id="primary-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a><a href="#process">How it works</a><a href="#why">Why us</a><a href="#contact">Contact</a>
+        <a class="nav-cta" href="tel:+918089434967">Call us <span>↗</span></a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero section-pad">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="pulse"></span> WAFID assistance · Ernakulam · Kerala</p>
+          <h1>Your GCC journey,<br><i>made clear.</i></h1>
+          <p class="hero-lede">WAFID medical appointments, attestation and visa support — handled with care, clarity and a human on the other end.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#contact">Start your booking <span>↗</span></a><a class="text-link" href="#process">See how it works <span>↓</span></a></div>
         </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+        <div class="hero-art reveal reveal-delay" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="passport-card"><div class="passport-top"><span>WAFID / GCC</span><span>01 — 06</span></div><div class="passport-emblem">✦</div><div class="passport-title">MEDICAL<br><strong>CLEARANCE</strong></div><div class="passport-foot"><span>COCHIN, IN</span><span>2026</span></div></div>
+          <span class="hero-hotspot"><i></i><span>Guided from booking to report</span></span>
+          <div class="float-note note-one">01 <span>Appointment<br>booked</span></div><div class="float-note note-two">02 <span>Documents<br>verified</span></div>
+        </div>
+      </section>
+      <section class="trust-strip"><div><span>Trusted for the details</span><strong>Everything you need for a smoother GCC medical process.</strong></div><div class="trust-stats"><span><b>01</b> Human guidance</span><span><b>02</b> Clear next steps</span><span><b>03</b> Prompt updates</span></div></section>
+      <div class="portal-stack" data-portal-stack>
+      <section class="intro section-pad" id="why"><div class="section-kicker">01 / The Wafid difference</div><div class="intro-grid"><h2>Less waiting.<br><em>More moving.</em></h2><div><p class="large-copy">The WAFID process can feel like a maze of forms, dates and unfamiliar steps. We turn it into a simple, guided experience — from your first question to your final certificate.</p><a class="arrow-link" href="#services">Explore our services <span>↗</span></a></div></div></section>
+      <section class="services section-pad" id="services"><div class="section-kicker">02 / What we handle</div><div class="section-heading"><h2>One partner.<br><em>Every step.</em></h2><p>Practical support for the moments that matter before you travel.</p></div><div class="service-grid"><article class="service-card featured"><span class="card-number">01</span><div class="service-icon">◉</div><h3>WAFID<br>appointment</h3><p>Get booked with the right WAFID-assigned medical centre, without the guesswork.</p><a href="#contact">Book an appointment <span>↗</span></a></article><article class="service-card"><span class="card-number">02</span><div class="service-icon">⌁</div><h3>Medical<br>attestation</h3><p>Safe handling and timely guidance for your medical certificate attestation.</p><a href="#contact">Ask about attestation <span>↗</span></a></article><article class="service-card"><span class="card-number">03</span><div class="service-icon">＋</div><h3>Visa<br>stamping</h3><p>Assistance with Kuwait visa stamping, including normal and expedited options.</p><a href="#contact">Ask about stamping <span>↗</span></a></article><article class="service-card"><span class="card-number">04</span><div class="service-icon">✓</div><h3>Medical checkup<br>assistance</h3><p>Prompt appointment guidance and notifications so you know what comes next.</p><a href="#contact">Get assistance <span>↗</span></a></article><article class="service-card"><span class="card-number">05</span><div class="service-icon">↗</div><h3>Online<br>applications</h3><p>Support with online medical applications, registration details and payments.</p><a href="#contact">Start an application <span>↗</span></a></article><article class="service-card"><span class="card-number">06</span><div class="service-icon">?</div><h3>GCC<br>consultation</h3><p>Clear answers for WAFID medical, attestation and visa-related questions.</p><a href="#contact">Talk to our team <span>↗</span></a></article></div></section>
+      </div>
+      <section class="process section-pad" id="process"><div class="section-kicker">03 / The path forward</div><div class="process-grid"><div><h2>Clear by<br><em>design.</em></h2><p>Three considered steps. One less thing to worry about.</p></div><div class="steps"><div class="step"><span>01</span><div><h3>Tell us where you’re going</h3><p>Share your destination, travel purpose and preferred timeline.</p></div></div><div class="step"><span>02</span><div><h3>We line up the details</h3><p>We guide your booking and keep you updated as things move.</p></div></div><div class="step"><span>03</span><div><h3>You move with confidence</h3><p>Walk into your appointment knowing exactly what comes next.</p></div></div></div></div></section>
+      <section class="wafid-explainer section-pad" id="about-wafid"><div class="section-kicker">04 / Understand WAFID</div><div class="explainer-grid"><div><h2>What it is.<br><em>Why it matters.</em></h2><p class="explainer-lede">WAFID medical screening is generally required before travelling to GCC countries for employment, residence or higher studies. The examination is completed at a WAFID-assigned medical centre, which issues the fitness report.</p></div><div class="fact-list"><article><span>01</span><h3>Assigned centres</h3><p>Your medical examination must be completed at the centre assigned through the WAFID process.</p></article><article><span>02</span><h3>Fitness report</h3><p>The medical centre generates your report after completing the required examination.</p></article><article><span>03</span><h3>Guided support</h3><p>We assist with booking and process guidance; medical decisions remain with the authorised centre.</p></article></div></div></section>
+      <section class="countries section-pad"><div class="country-copy"><div class="section-kicker">05 / GCC destinations</div><h2>Six countries.<br><em>One clear start.</em></h2><p>WAFID medical clearance supports travel for employment, residence visas and higher studies across the six GCC destinations.</p></div><div class="country-list"><span>United Arab Emirates <b>01</b></span><span>Saudi Arabia <b>02</b></span><span>Qatar <b>03</b></span><span>Kuwait <b>04</b></span><span>Bahrain <b>05</b></span><span>Oman <b>06</b></span></div></section>
+      <section class="contact section-pad" id="contact">
+        <div class="contact-panel"><div><div class="section-kicker">06 / Start here</div><h2>Ready when<br><em>you are.</em></h2><p>Tell us what you need. Our team will help you find the clearest next step.</p></div><div class="contact-details"><div class="contact-actions" aria-label="Direct contact options"><div class="contact-pill"><a class="contact-primary" href="tel:+918089434967"><span class="contact-icon" aria-hidden="true">⌕</span><span><small>Call us</small><strong>+91 80894 34967</strong></span></a><button class="copy-button" type="button" data-copy="+918089434967" aria-label="Copy phone number"><span aria-hidden="true">⧉</span><span class="copy-feedback" role="status" aria-live="polite"></span></button></div><div class="contact-pill"><a class="contact-primary" href="mailto:kinoshkochin2000@gmail.com?subject=WAFID%20Cochin%20inquiry"><span class="contact-icon" aria-hidden="true">@</span><span><small>Email us</small><strong>kinoshkochin2000@gmail.com</strong></span></a><button class="copy-button" type="button" data-copy="kinoshkochin2000@gmail.com" aria-label="Copy email address"><span aria-hidden="true">⧉</span><span class="copy-feedback" role="status" aria-live="polite"></span></button></div><div class="contact-pill"><a class="contact-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Manavalan%20Building%2C%20Amulya%20Street%2C%20Kacheripady%2C%20Kochi%2C%20Kerala%20682018%2C%20India" target="_blank" rel="noreferrer"><span class="contact-icon" aria-hidden="true">●</span><span><small>Visit us</small><strong>Manavalan Building, Amulya Street</strong><em>Kacheripady, Kochi 682018</em></span></a><button class="copy-button" type="button" data-copy="Manavalan Building, Amulya Street, Kacheripady, Kochi, Kerala 682018, India" aria-label="Copy office address"><span aria-hidden="true">⧉</span><span class="copy-feedback" role="status" aria-live="polite"></span></button></div></div><a class="button button-light" href="https://wa.me/918089434967" target="_blank" rel="noreferrer">WhatsApp the team <span>↗</span></a></div></div>
+        <div class="map-card">
+          <iframe title="Map showing Manavalan Building on Amulya Street, Kacheripady" src="https://www.google.com/maps?q=Manavalan%20Building%2C%20Amulya%20Street%2C%20Kacheripady%2C%20Kochi%2C%20Kerala%20682018%2C%20India&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-bar"><div><span class="map-pin">●</span><p><strong>Find us in Kacheripady</strong><small>Tap your preferred maps app for directions.</small></p></div><div class="map-actions"><a href="https://www.google.com/maps/search/?api=1&amp;query=Manavalan%20Building%2C%20Amulya%20Street%2C%20Kacheripady%2C%20Kochi%2C%20Kerala%20682018%2C%20India" target="_blank" rel="noreferrer">Google Maps <span>↗</span></a><a href="https://maps.apple.com/?q=Manavalan%20Building%2C%20Amulya%20Street&amp;address=Amulya%20St%2C%20Kacheripady%2C%20Kochi%2C%20Kerala%20682018%2C%20India" target="_blank" rel="noreferrer">Apple Maps <span>↗</span></a></div></div>
+        </div>
+      </section>
+    </main>
+    <footer><a class="wordmark" href="#top"><span class="mark">W</span><span>WAFID<br><em>COCHIN</em></span></a><span>© Wafid Cochin 2026</span><a href="#top">Back to top ↑</a></footer>
+  </div>
+  <script src="scripts.js"></script>
 </body>
-
 </html>
