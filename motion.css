@@ -437,7 +437,7 @@ button:active {
   .service-card { transform: none; }
   .service-card::before, .map-card::before { display: none; }
   .service-card > a { opacity: 1; transform: none; }
-  .hero-hotspot span { opacity: 1; transform: none; }
+  .hero-hotspot { display: none; }
 }
 
 @media (max-width: 700px) {
